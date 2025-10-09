@@ -1,0 +1,6 @@
+name: "expo-react-native-runner"
+description: "Expo Go mobile starter paired with a Cloudflare Worker chat backend"
+base_reference: "expo-reference"
+
+package_patches:
+  name: "expo-react-native-runner"

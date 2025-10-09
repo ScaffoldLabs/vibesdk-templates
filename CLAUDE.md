@@ -8,12 +8,13 @@ This is a collection of Cloudflare Worker templates designed for AI code generat
 
 ## Template Architecture
 
-The repository contains 4 main template types:
+The repository contains 5 main template types:
 
 1. **c-code-next-runner** - Next.js application with OpenNext for Cloudflare deployment
 2. **c-code-react-runner** - React/Vite application with Cloudflare Workers integration  
 3. **next-llm-chat-runner** - Next.js LLM chat application with OpenAI integration
 4. **vite-cfagents-runner** - Vite/React application with Cloudflare Agents SDK and MCP support
+5. **expo-react-native-runner** - Expo/React Native mobile application running in Expo Go with a Cloudflare Worker backend
 
 All templates share common patterns:
 - Cloudflare Workers runtime configuration via `wrangler.jsonc`

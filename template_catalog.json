@@ -35,6 +35,27 @@
     }
   },
   {
+    "name": "expo-react-native-runner",
+    "language": "typescript",
+    "frameworks": [
+      "expo",
+      "react-native",
+      "@react-navigation/native",
+      "@react-navigation/native-stack",
+      "@tanstack/react-query",
+      "cloudflare",
+      "wrangler",
+      "typescript",
+      "zod",
+      "jest",
+      "eslint"
+    ],
+    "description": {
+      "selection": "# Template Selection\n\nChoose this template when you need a React Native Expo Go mobile experience with a Cloudflare Worker backend.\n\nUse it for:\n- Mobile-first assistants, dashboards, or productivity apps\n- Iterating on conversation flows before shipping native builds\n- Projects that want to call the included Worker AI endpoint\n\nAvoid it when:\n- You only need a web UI\n- You require native modules unavailable in Expo Go\n- You will not run the worker backend\n\nWhat you get:\n- TypeScript Expo project with navigation, theming, and React Query\n- Cloudflare Worker API with CORS + AI gateway hooks\n- Strict linting, unit tests, and zero any usage",
+      "usage": "# Usage\n\n## Expo Go Development\n- `npm install` (or `bun install`) to install dependencies\n- `npm start` to launch Expo Go (press `i` or `a` for simulators)\n- Update `App.tsx`, `src/screens/HomeScreen.tsx`, and `src/screens/ChatScreen.tsx` for your flows\n\n## Worker API\n- `npm run worker:dev` to boot the Cloudflare Worker locally on port 8787\n- Environment variables (optional): set `AI_GATEWAY_URL` and `AI_GATEWAY_API_KEY` for live LLM calls\n- The mobile app reads `extra.apiBaseUrl` from `app.config.ts` (`http://127.0.0.1:8787` by default)\n\n## Architecture Notes\n- Navigation: Native stack navigator (`@react-navigation/native-stack`)\n- State: React Query for chat history + optimistic updates\n- Theming: `src/styles/theme.ts` centralizes light/dark palettes\n- Worker endpoint: `/api/threads/:threadId/messages` handles chat requests with graceful AI fallback\n\n## Testing & Quality\n- `npm test` runs Jest (`__tests__/createAssistantMessage.test.ts` sample included)\n- `npm run lint` enforces strict ESLint rules (no `any`, React Hooks linting)\n- `npm run typecheck` uses the Expo TypeScript config for additional safety\n\n## Customization Checklist\n- Replace placeholder PNGs in `assets/`\n- Adjust metadata in `app.config.ts` (display name, icons, splash colors)\n- Expand the Cloudflare Worker with your domain logic—keep CORS headers intact for Expo Go\n- Update `src/services/assistantClient.ts` if you move endpoints or return shapes"
+    }
+  },
+  {
     "name": "vite-cf-DO-KV-runner",
     "language": "typescript",
     "frameworks": [

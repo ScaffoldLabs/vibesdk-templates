@@ -1,0 +1,18 @@
+# Expo / React Native ignores
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.expo
+.expo-shared
+.expo/**
+web-build
+ios
+android
+.idea
+.vscode
+.DS_Store
+.env*
+.caches
+coverage

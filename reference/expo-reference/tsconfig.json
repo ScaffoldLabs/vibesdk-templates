@@ -1,0 +1,36 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "jsx": "react-native",
+    "types": [
+      "jest",
+      "react",
+      "react-native",
+      "node"
+    ],
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "App.tsx",
+    "app.config.ts",
+    "index.js",
+    "src",
+    "worker",
+    "__tests__",
+    "metro.config.js",
+    "babel.config.js",
+    "jest.config.js",
+    "jest.setup.ts"
+  ]
+}
